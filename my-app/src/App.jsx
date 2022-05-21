@@ -1,5 +1,5 @@
 import './App.css';
-import InfinateScroll from './components/InfinateScroll/InfinateScroll';
+
 
 function App() {
   return (
