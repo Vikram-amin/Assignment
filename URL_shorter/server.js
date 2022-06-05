@@ -29,7 +29,7 @@ app.post("/shortURLs", async (req,res) => {
 
 app.get("/:url", async (req, res) => {
   try {
-    const shortUrlss = await shortURL.findOne({ short: req.params.url });
+    const shortUrlss = await shortURL.findOne({ short: req.params.url});
     shortUrlss.clicks++;
     shortUrlss.save();
     res.redirect(shortUrlss.full);
